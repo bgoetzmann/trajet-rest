@@ -2,15 +2,6 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: localisationInstance, field: 'anneeMoisJourHeureMinute', 'error')} required">
-	<label for="anneeMoisJourHeureMinute">
-		<g:message code="localisation.anneeMoisJourHeureMinute.label" default="Annee Mois Jour Heure Minute" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:datePicker name="anneeMoisJourHeureMinute" precision="day"  value="${localisationInstance?.anneeMoisJourHeureMinute}"  />
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: localisationInstance, field: 'pointLocalisation', 'error')} ">
 	<label for="pointLocalisation">
 		<g:message code="localisation.pointLocalisation.label" default="Point Localisation" />
@@ -26,6 +17,15 @@
 		
 	</label>
 	<g:textField name="releveKm" value="${localisationInstance?.releveKm}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: localisationInstance, field: 'timeLocalisation', 'error')} ">
+	<label for="timeLocalisation">
+		<g:message code="localisation.timeLocalisation.label" default="Time Localisation" />
+		
+	</label>
+	<g:textField name="timeLocalisation" value="${localisationInstance?.timeLocalisation}"/>
 
 </div>
 

@@ -1,7 +1,7 @@
 package trajet.rest
 
 class Localisation {
-	Date anneeMoisJourHeureMinute
+	String timeLocalisation
 	String pointLocalisation
 	String releveKm
     static constraints = {

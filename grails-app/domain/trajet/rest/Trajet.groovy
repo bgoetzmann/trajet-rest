@@ -1,5 +1,7 @@
 package trajet.rest
+import grails.rest.* 
 
+@Resource(uri='/trajets')
 class Trajet {
 	int numUtilisateur
     int numVehicule

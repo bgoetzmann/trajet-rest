@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list localisation">
 			
-				<g:if test="${localisationInstance?.anneeMoisJourHeureMinute}">
-				<li class="fieldcontain">
-					<span id="anneeMoisJourHeureMinute-label" class="property-label"><g:message code="localisation.anneeMoisJourHeureMinute.label" default="Annee Mois Jour Heure Minute" /></span>
-					
-						<span class="property-value" aria-labelledby="anneeMoisJourHeureMinute-label"><g:formatDate date="${localisationInstance?.anneeMoisJourHeureMinute}" /></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${localisationInstance?.pointLocalisation}">
 				<li class="fieldcontain">
 					<span id="pointLocalisation-label" class="property-label"><g:message code="localisation.pointLocalisation.label" default="Point Localisation" /></span>
@@ -46,6 +37,15 @@
 					<span id="releveKm-label" class="property-label"><g:message code="localisation.releveKm.label" default="Releve Km" /></span>
 					
 						<span class="property-value" aria-labelledby="releveKm-label"><g:fieldValue bean="${localisationInstance}" field="releveKm"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${localisationInstance?.timeLocalisation}">
+				<li class="fieldcontain">
+					<span id="timeLocalisation-label" class="property-label"><g:message code="localisation.timeLocalisation.label" default="Time Localisation" /></span>
+					
+						<span class="property-value" aria-labelledby="timeLocalisation-label"><g:fieldValue bean="${localisationInstance}" field="timeLocalisation"/></span>
 					
 				</li>
 				</g:if>

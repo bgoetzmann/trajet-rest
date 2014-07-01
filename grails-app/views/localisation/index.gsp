@@ -24,11 +24,11 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="anneeMoisJourHeureMinute" title="${message(code: 'localisation.anneeMoisJourHeureMinute.label', default: 'Annee Mois Jour Heure Minute')}" />
-					
 						<g:sortableColumn property="pointLocalisation" title="${message(code: 'localisation.pointLocalisation.label', default: 'Point Localisation')}" />
 					
 						<g:sortableColumn property="releveKm" title="${message(code: 'localisation.releveKm.label', default: 'Releve Km')}" />
+					
+						<g:sortableColumn property="timeLocalisation" title="${message(code: 'localisation.timeLocalisation.label', default: 'Time Localisation')}" />
 					
 					</tr>
 				</thead>
@@ -36,11 +36,11 @@
 				<g:each in="${localisationInstanceList}" status="i" var="localisationInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${localisationInstance.id}">${fieldValue(bean: localisationInstance, field: "anneeMoisJourHeureMinute")}</g:link></td>
-					
-						<td>${fieldValue(bean: localisationInstance, field: "pointLocalisation")}</td>
+						<td><g:link action="show" id="${localisationInstance.id}">${fieldValue(bean: localisationInstance, field: "pointLocalisation")}</g:link></td>
 					
 						<td>${fieldValue(bean: localisationInstance, field: "releveKm")}</td>
+					
+						<td>${fieldValue(bean: localisationInstance, field: "timeLocalisation")}</td>
 					
 					</tr>
 				</g:each>
